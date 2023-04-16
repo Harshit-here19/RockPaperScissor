@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Jost:wght@300;400;500&display=swap');
+
+main {
+    background-color: #a9d3ff;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    height: 100vh;
+}
+
+p {
+    font-family: 'Dongle', sans-serif;
+    font-size: 2rem;
+}
+
+.container1 {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px grey;
+    width: 15vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.scoreBoard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 150px;
+    height: 100px;
+    padding-top: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.container2 {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px grey;
+    width: 15vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.tile {
+    height: 18%;
+}
+
+#userTile1:hover,
+#userTile2:hover,
+#userTile3:hover {
+    position: relative;
+    height: 25%;
+}
+
+.win {
+    background-color: #138A36;
+}
+
+.lose {
+    background-color: #e63946;
+}
+
+.draw {
+    background-color: #c44900;
+}
+
+.blog-footer {
+    /* padding: 10px 0; */
+    color: #727272;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+  }
+  .blog-footer p:last-child {
+    margin-bottom: 0;
+  }
+
+@media only screen and (max-width:500px) {
+    main {
+        background-color: #a9d3ff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px;
+        height: 85vh;
+    }
+
+    .container1 {
+        background-color: #fff;
+        width: 90vw;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        margin: 60px;
+    }
+
+    .container2 {
+        background-color: #fff;
+        width: 90vw;
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 60px;
+    }
+
+    .tile {
+        height: 50%;
+    }
+
+    #userTile1:hover,
+    #userTile2:hover,
+    #userTile3:hover {
+        position: relative;
+        height: 60%;
+    }
+
+    .blog-footer {
+        /* padding: 10px 0; */
+        color: #727272;
+        text-align: center;
+        background-color: #f9f9f9;
+        border-top: .05rem solid #e5e5e5;
+      }
+}
